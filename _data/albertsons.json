@@ -85,10 +85,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"0a001c5d-0000-0700-0000-602ad10e0000\"",
+    "_etag": "\"0a00945e-0000-0700-0000-602ad1fd0000\"",
     "_rid": "X+p8ANrtre+ZAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+ZAQAAAAAAAA==/",
-    "_ts": 1613418766,
+    "_ts": 1613419005,
     "clientName": "Safeway 0010",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -102,7 +102,7 @@
     "events": [
     ],
     "id": "1600105890821",
-    "lastFetched": "2021-02-15T19:52:43.108Z",
+    "lastFetched": "2021-02-15T19:56:39.277Z",
     "lat": 39.6456847,
     "long": -105.3424265,
     "name": "Safeway - 3851 S. Highway 74, Evergreen, CO, 80439",
@@ -339,10 +339,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"0a003d5b-0000-0700-0000-602acfec0000\"",
+    "_etag": "\"0a00785e-0000-0700-0000-602ad1e10000\"",
     "_rid": "X+p8ANrtre+oAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+oAQAAAAAAAA==/",
-    "_ts": 1613418476,
+    "_ts": 1613418977,
     "clientName": "Safeway 0637",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -356,7 +356,7 @@
     "events": [
     ],
     "id": "1600106075681",
-    "lastFetched": "2021-02-15T19:47:53.889Z",
+    "lastFetched": "2021-02-15T19:56:14.950Z",
     "lat": 40.4658401,
     "long": -106.82668,
     "name": "Safeway - 37500 E US HIGHWAY 40 #881030, STEAMBOAT SPRINGS, CO, 80487",
@@ -901,10 +901,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"0a00775b-0000-0700-0000-602ad00e0000\"",
+    "_etag": "\"0a00855e-0000-0700-0000-602ad1ed0000\"",
     "_rid": "X+p8ANrtre++AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre++AQAAAAAAAA==/",
-    "_ts": 1613418510,
+    "_ts": 1613418989,
     "clientName": "Safeway 1267",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -918,7 +918,7 @@
     "events": [
     ],
     "id": "1600106365720",
-    "lastFetched": "2021-02-15T19:48:27.841Z",
+    "lastFetched": "2021-02-15T19:56:26.551Z",
     "lat": 39.6667102,
     "long": -104.9165926,
     "name": "Safeway - 6460 East Yale Ave., Denver, CO, 80222",
@@ -1773,10 +1773,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"0a00445c-0000-0700-0000-602ad08f0000\"",
+    "_etag": "\"0a00795e-0000-0700-0000-602ad1e40000\"",
     "_rid": "X+p8ANrtre-iAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-iAQAAAAAAAA==/",
-    "_ts": 1613418639,
+    "_ts": 1613418980,
     "clientName": "Safeway 1877",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1790,7 +1790,7 @@
     "events": [
     ],
     "id": "1600106808636",
-    "lastFetched": "2021-02-15T19:50:37.152Z",
+    "lastFetched": "2021-02-15T19:56:17.599Z",
     "lat": 39.3619974,
     "long": -104.8631566,
     "name": "Safeway - 880 South Perry Street, Castle Rock, CO, 80104",
@@ -2249,10 +2249,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"0a00955b-0000-0700-0000-602ad0220000\"",
+    "_etag": "\"0a007e5e-0000-0700-0000-602ad1ea0000\"",
     "_rid": "X+p8ANrtre-6AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-6AQAAAAAAAA==/",
-    "_ts": 1613418530,
+    "_ts": 1613418986,
     "clientName": "Safeway 2816",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -2266,7 +2266,7 @@
     "events": [
     ],
     "id": "1600107110798",
-    "lastFetched": "2021-02-15T19:48:47.687Z",
+    "lastFetched": "2021-02-15T19:56:20.307Z",
     "lat": 38.8062228,
     "long": -104.8256035,
     "name": "Safeway - 1920 South Nevada Avenue, Colorado Springs, CO, 80905",
