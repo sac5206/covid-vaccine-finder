@@ -422,10 +422,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"650178c8-0000-0700-0000-602c469c0000\"",
+    "_etag": "\"6501b7ca-0000-0700-0000-602c47ee0000\"",
     "_rid": "X+p8ANrtre+rAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+rAQAAAAAAAA==/",
-    "_ts": 1613514396,
+    "_ts": 1613514734,
     "clientName": "Safeway 0804",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -439,7 +439,7 @@
     "events": [
     ],
     "id": "1600106113003",
-    "lastFetched": "2021-02-16T22:26:34.481Z",
+    "lastFetched": "2021-02-16T22:32:11.900Z",
     "lat": 40.4085012,
     "long": -105.1002385,
     "name": "Safeway - 1451 Eisenhower Blvd., Loveland, CO, 80538",
@@ -658,10 +658,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501f6c7-0000-0700-0000-602c46570000\"",
+    "_etag": "\"6501d6ca-0000-0700-0000-602c47fd0000\"",
     "_rid": "X+p8ANrtre+0AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+0AQAAAAAAAA==/",
-    "_ts": 1613514327,
+    "_ts": 1613514749,
     "clientName": "Safeway 0892",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -675,7 +675,7 @@
     "events": [
     ],
     "id": "1600106233908",
-    "lastFetched": "2021-02-16T22:25:25.155Z",
+    "lastFetched": "2021-02-16T22:32:26.991Z",
     "lat": 39.8832921,
     "long": -104.9447694,
     "name": "Safeway - 3840 East 104th Avenue, Thornton, CO, 80233",
@@ -686,10 +686,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501ddc8-0000-0700-0000-602c46d60000\"",
+    "_etag": "\"6501c7ca-0000-0700-0000-602c47f50000\"",
     "_rid": "X+p8ANrtre+1AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+1AQAAAAAAAA==/",
-    "_ts": 1613514454,
+    "_ts": 1613514741,
     "clientName": "Safeway 0899",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -703,7 +703,7 @@
     "events": [
     ],
     "id": "1600106254742",
-    "lastFetched": "2021-02-16T22:27:31.539Z",
+    "lastFetched": "2021-02-16T22:32:19.178Z",
     "lat": 39.6047252,
     "long": -104.7169147,
     "name": "Safeway - 6100 S. Gun Club Road, Aurora, CO, 80016",
@@ -1078,10 +1078,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501e9c8-0000-0700-0000-602c46dc0000\"",
+    "_etag": "\"6501cfca-0000-0700-0000-602c47fa0000\"",
     "_rid": "X+p8ANrtre-FAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-FAQAAAAAAAA==/",
-    "_ts": 1613514460,
+    "_ts": 1613514746,
     "clientName": "Safeway 1479",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1095,7 +1095,7 @@
     "events": [
     ],
     "id": "1600106451355",
-    "lastFetched": "2021-02-16T22:27:36.795Z",
+    "lastFetched": "2021-02-16T22:32:24.341Z",
     "lat": 39.7710918,
     "long": -105.0817682,
     "name": "Safeway - 3900 Wadsworth Blvd, Wheat Ridge, CO, 80033",
@@ -1162,10 +1162,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501a3c8-0000-0700-0000-602c46b30000\"",
+    "_etag": "\"6501c2ca-0000-0700-0000-602c47f30000\"",
     "_rid": "X+p8ANrtre-JAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-JAQAAAAAAAA==/",
-    "_ts": 1613514419,
+    "_ts": 1613514739,
     "clientName": "Safeway 1532",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1179,7 +1179,7 @@
     "events": [
     ],
     "id": "1600106500986",
-    "lastFetched": "2021-02-16T22:26:56.794Z",
+    "lastFetched": "2021-02-16T22:32:14.475Z",
     "lat": 39.3600208,
     "long": -104.6122417,
     "name": "Safeway - 220 S. Elizabeth Street, Elizabeth, CO, 80107",
@@ -1218,10 +1218,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501f3c7-0000-0700-0000-602c46550000\"",
+    "_etag": "\"6501acca-0000-0700-0000-602c47d80000\"",
     "_rid": "X+p8ANrtre-LAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-LAQAAAAAAAA==/",
-    "_ts": 1613514325,
+    "_ts": 1613514712,
     "clientName": "Safeway 1548",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1235,7 +1235,7 @@
     "events": [
     ],
     "id": "1600106525089",
-    "lastFetched": "2021-02-16T22:25:22.347Z",
+    "lastFetched": "2021-02-16T22:31:47.121Z",
     "lat": 39.5376817,
     "long": -104.8850043,
     "name": "Safeway - 9229 East Lincoln Ave., Lonetree, CO, 80124",
@@ -2136,10 +2136,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"650110c8-0000-0700-0000-602c466b0000\"",
+    "_etag": "\"6501eaca-0000-0700-0000-602c48070000\"",
     "_rid": "X+p8ANrtre-TAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-TAQAAAAAAAA==/",
-    "_ts": 1613514347,
+    "_ts": 1613514759,
     "clientName": "Safeway 1614",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -2153,7 +2153,7 @@
     "events": [
     ],
     "id": "1600106623151",
-    "lastFetched": "2021-02-16T22:25:45.012Z",
+    "lastFetched": "2021-02-16T22:32:37.323Z",
     "lat": 39.7249623,
     "long": -104.975483,
     "name": "Safeway - 560 Corona Street, Denver, CO, 80218",
@@ -2500,10 +2500,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501e0c7-0000-0700-0000-602c46460000\"",
+    "_etag": "\"6501b5ca-0000-0700-0000-602c47eb0000\"",
     "_rid": "X+p8ANrtre-hAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-hAQAAAAAAAA==/",
-    "_ts": 1613514310,
+    "_ts": 1613514731,
     "clientName": "Safeway 1873",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -2517,7 +2517,7 @@
     "events": [
     ],
     "id": "1600106796276",
-    "lastFetched": "2021-02-16T22:25:07.462Z",
+    "lastFetched": "2021-02-16T22:32:09.303Z",
     "lat": 39.872346,
     "long": -104.9780069,
     "name": "Safeway - 771 Thornton Parkway, Thornton, CO, 80229",
@@ -3144,10 +3144,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"65010dc9-0000-0700-0000-602c46ef0000\"",
+    "_etag": "\"6501f7ca-0000-0700-0000-602c480d0000\"",
     "_rid": "X+p8ANrtre--AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre--AQAAAAAAAA==/",
-    "_ts": 1613514479,
+    "_ts": 1613514765,
     "clientName": "Safeway 2911",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -3161,7 +3161,7 @@
     "events": [
     ],
     "id": "1600107172685",
-    "lastFetched": "2021-02-16T22:27:56.792Z",
+    "lastFetched": "2021-02-16T22:32:39.935Z",
     "lat": 40.0133197,
     "long": -105.2618511,
     "name": "Safeway - 2798 Arapahoe, Boulder, CO, 80302",
@@ -3200,10 +3200,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"65019ec8-0000-0700-0000-602c46ad0000\"",
+    "_etag": "\"6501deca-0000-0700-0000-602c48000000\"",
     "_rid": "X+p8ANrtre8BAgAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre8BAgAAAAAAAA==/",
-    "_ts": 1613514413,
+    "_ts": 1613514752,
     "clientName": "Safeway 2915",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -3217,7 +3217,7 @@
     "events": [
     ],
     "id": "1600107198106",
-    "lastFetched": "2021-02-16T22:26:50.362Z",
+    "lastFetched": "2021-02-16T22:32:29.596Z",
     "lat": 40.4007594,
     "long": -105.0760139,
     "name": "Safeway - 860 Cleveland_avenue, Loveland, CO, 80537",
@@ -3228,10 +3228,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"65016dc9-0000-0700-0000-602c471b0000\"",
+    "_etag": "\"6501e7ca-0000-0700-0000-602c48050000\"",
     "_rid": "X+p8ANrtre8CAgAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre8CAgAAAAAAAA==/",
-    "_ts": 1613514523,
+    "_ts": 1613514757,
     "clientName": "Safeway 2917",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -3245,7 +3245,7 @@
     "events": [
     ],
     "id": "1600107210324",
-    "lastFetched": "2021-02-16T22:28:40.602Z",
+    "lastFetched": "2021-02-16T22:32:32.382Z",
     "lat": 39.986677,
     "long": -104.8282125,
     "name": "Safeway - 1605 Bridge Street, Brighton, CO, 80601",
@@ -3375,10 +3375,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501c1c8-0000-0700-0000-602c46ca0000\"",
+    "_etag": "\"6501b1ca-0000-0700-0000-602c47e60000\"",
     "_rid": "X+p8ANrtre8IAgAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre8IAgAAAAAAAA==/",
-    "_ts": 1613514442,
+    "_ts": 1613514726,
     "clientName": "Safeway 3728",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -3393,7 +3393,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3404,7 +3404,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3415,7 +3415,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3426,7 +3426,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3437,7 +3437,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3448,7 +3448,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3459,7 +3459,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3470,7 +3470,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3481,7 +3481,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3492,7 +3492,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3503,7 +3503,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3514,7 +3514,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3525,7 +3525,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3536,7 +3536,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3547,7 +3547,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3558,7 +3558,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3569,7 +3569,7 @@
       {
         "date": "02/17/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514433585,
+        "eventId": 1613514715141,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3580,7 +3580,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3591,7 +3591,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3602,7 +3602,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3613,7 +3613,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3624,7 +3624,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3635,7 +3635,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3646,7 +3646,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3657,7 +3657,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3668,7 +3668,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3679,7 +3679,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3690,7 +3690,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3701,7 +3701,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514434956,
+        "eventId": 1613514716358,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3712,7 +3712,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3723,7 +3723,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3734,7 +3734,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3745,7 +3745,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3756,7 +3756,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3767,7 +3767,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3778,7 +3778,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3789,7 +3789,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3800,7 +3800,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3811,7 +3811,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3822,7 +3822,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3833,7 +3833,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3844,7 +3844,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3855,7 +3855,7 @@
       {
         "date": "02/19/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514436272,
+        "eventId": 1613514717583,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3866,7 +3866,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3877,7 +3877,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3888,7 +3888,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3899,7 +3899,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3910,7 +3910,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3921,7 +3921,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3932,7 +3932,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3943,7 +3943,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3954,7 +3954,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3965,7 +3965,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3976,7 +3976,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3987,7 +3987,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -3998,7 +3998,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4009,7 +4009,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4020,7 +4020,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4031,7 +4031,7 @@
       {
         "date": "02/20/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514437506,
+        "eventId": 1613514721620,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4042,7 +4042,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4053,7 +4053,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4064,7 +4064,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4075,7 +4075,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4086,7 +4086,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4097,7 +4097,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4108,7 +4108,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4119,7 +4119,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4130,7 +4130,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4141,7 +4141,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4152,7 +4152,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4163,7 +4163,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4174,7 +4174,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4185,7 +4185,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4196,7 +4196,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4207,7 +4207,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4218,7 +4218,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4229,7 +4229,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4240,7 +4240,7 @@
       {
         "date": "02/21/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514438761,
+        "eventId": 1613514722865,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4251,7 +4251,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4262,7 +4262,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4273,7 +4273,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4284,7 +4284,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4295,7 +4295,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4306,7 +4306,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4317,7 +4317,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4328,7 +4328,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4339,7 +4339,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4350,7 +4350,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4361,7 +4361,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4372,7 +4372,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4383,7 +4383,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4394,7 +4394,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4405,7 +4405,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4416,7 +4416,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4427,7 +4427,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4438,7 +4438,7 @@
       {
         "date": "02/22/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514439987,
+        "eventId": 1613514724160,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4449,7 +4449,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4460,7 +4460,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4471,7 +4471,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4482,7 +4482,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4493,7 +4493,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4504,7 +4504,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4515,7 +4515,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4526,7 +4526,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4537,7 +4537,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4548,7 +4548,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4559,7 +4559,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4570,7 +4570,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4581,7 +4581,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4592,7 +4592,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4603,7 +4603,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4614,7 +4614,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4625,7 +4625,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4636,7 +4636,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4647,7 +4647,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4658,7 +4658,7 @@
       {
         "date": "02/23/2021",
         "duration": "15 Minutes",
-        "eventId": 1613514441228,
+        "eventId": 1613514725448,
         "externalClientId": "1600107286284",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -4668,7 +4668,7 @@
       }
     ],
     "id": "1600107286284",
-    "lastFetched": "2021-02-16T22:27:10.662Z",
+    "lastFetched": "2021-02-16T22:31:52.078Z",
     "lat": 38.4458263,
     "long": -105.2302842,
     "name": "Safeway - 1414 Main Street, Canon City, CO, 81212",
@@ -4714,10 +4714,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"6501f1c7-0000-0700-0000-602c464e0000\"",
+    "_etag": "\"6501ccca-0000-0700-0000-602c47f80000\"",
     "_rid": "X+p8ANrtre8KAgAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre8KAgAAAAAAAA==/",
-    "_ts": 1613514318,
+    "_ts": 1613514744,
     "clientName": "Safeway 3836",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -4731,7 +4731,7 @@
     "events": [
     ],
     "id": "1600107310488",
-    "lastFetched": "2021-02-16T22:25:16.465Z",
+    "lastFetched": "2021-02-16T22:32:21.754Z",
     "lat": 39.7200488,
     "long": -104.9038955,
     "name": "Safeway - 200 Quebec St #400, Denver, CO, 80230",
@@ -4742,10 +4742,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"65012bc8-0000-0700-0000-602c467b0000\"",
+    "_etag": "\"6501b4ca-0000-0700-0000-602c47e90000\"",
     "_rid": "X+p8ANrtre8OBgAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre8OBgAAAAAAAA==/",
-    "_ts": 1613514363,
+    "_ts": 1613514729,
     "clientName": "Safeway 0839",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -4759,7 +4759,7 @@
     "events": [
     ],
     "id": "1600123173787",
-    "lastFetched": "2021-02-16T22:25:58.222Z",
+    "lastFetched": "2021-02-16T22:32:06.747Z",
     "lat": 39.563478,
     "long": -105.1096293,
     "name": "Safeway - 8434 South Kipling Parkway, Littleton, CO, 80127",
