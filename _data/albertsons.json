@@ -113,10 +113,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"51018d66-0000-0700-0000-602bc1cd0000\"",
+    "_etag": "\"5501cd59-0000-0700-0000-602bc2f10000\"",
     "_rid": "X+p8ANrtre+aAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+aAQAAAAAAAA==/",
-    "_ts": 1613480397,
+    "_ts": 1613480689,
     "clientName": "Safeway 0017",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -130,7 +130,7 @@
     "events": [
     ],
     "id": "1600105903158",
-    "lastFetched": "2021-02-16T12:59:54.549Z",
+    "lastFetched": "2021-02-16T13:04:46.442Z",
     "lat": 39.6509396,
     "long": -104.9874706,
     "name": "Safeway - 201 East Jefferson, Englewood, CO, 80113",
@@ -197,10 +197,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"5001b830-0000-0700-0000-602bc1730000\"",
+    "_etag": "\"55019ce8-0000-0700-0000-602bc31b0000\"",
     "_rid": "X+p8ANrtre+dAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+dAQAAAAAAAA==/",
-    "_ts": 1613480307,
+    "_ts": 1613480731,
     "clientName": "Safeway 0137",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -214,7 +214,7 @@
     "events": [
     ],
     "id": "1600105939613",
-    "lastFetched": "2021-02-16T12:58:24.770Z",
+    "lastFetched": "2021-02-16T13:05:28.484Z",
     "lat": 39.6960815,
     "long": -104.8474682,
     "name": "Safeway - 12200 East Mississippi, Aurora, CO, 80012",
@@ -925,10 +925,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"50018656-0000-0700-0000-602bc17d0000\"",
+    "_etag": "\"55014884-0000-0700-0000-602bc2fd0000\"",
     "_rid": "X+p8ANrtre+-AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre+-AQAAAAAAAA==/",
-    "_ts": 1613480317,
+    "_ts": 1613480701,
     "clientName": "Safeway 1286",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -942,7 +942,7 @@
     "events": [
     ],
     "id": "1600106377912",
-    "lastFetched": "2021-02-16T12:58:35.377Z",
+    "lastFetched": "2021-02-16T13:04:58.006Z",
     "lat": 38.8547318,
     "long": -104.8792114,
     "name": "Safeway - 3275 West Colorado Avenue, Colorado Springs, CO, 80904",
@@ -953,10 +953,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"500179b6-0000-0700-0000-602bc1990000\"",
+    "_etag": "\"55012a77-0000-0700-0000-602bc2f90000\"",
     "_rid": "X+p8ANrtre-BAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-BAQAAAAAAAA==/",
-    "_ts": 1613480345,
+    "_ts": 1613480697,
     "clientName": "Safeway 1440",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -971,7 +971,7 @@
       {
         "date": "02/18/2021",
         "duration": "15 Minutes",
-        "eventId": 1613480344836,
+        "eventId": 1613480696769,
         "externalClientId": "1600106402306",
         "noOfBookings": 0,
         "noOfProviders": 1,
@@ -981,7 +981,7 @@
       }
     ],
     "id": "1600106402306",
-    "lastFetched": "2021-02-16T12:59:02.149Z",
+    "lastFetched": "2021-02-16T13:04:49.242Z",
     "lat": 39.093266,
     "long": -104.8394238,
     "name": "Safeway - 624 Highway 105, Monument, CO, 80132",
@@ -1217,10 +1217,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"51012b97-0000-0700-0000-602bc1db0000\"",
+    "_etag": "\"5501ffd5-0000-0700-0000-602bc3150000\"",
     "_rid": "X+p8ANrtre-LAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-LAQAAAAAAAA==/",
-    "_ts": 1613480411,
+    "_ts": 1613480725,
     "clientName": "Safeway 1548",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1234,7 +1234,7 @@
     "events": [
     ],
     "id": "1600106525089",
-    "lastFetched": "2021-02-16T13:00:07.409Z",
+    "lastFetched": "2021-02-16T13:05:23.025Z",
     "lat": 39.5376817,
     "long": -104.8850043,
     "name": "Safeway - 9229 East Lincoln Ave., Lonetree, CO, 80124",
@@ -1273,10 +1273,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"52017314-0000-0700-0000-602bc1ff0000\"",
+    "_etag": "\"5501cdfb-0000-0700-0000-602bc3200000\"",
     "_rid": "X+p8ANrtre-OAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-OAQAAAAAAAA==/",
-    "_ts": 1613480447,
+    "_ts": 1613480736,
     "clientName": "Safeway 1568",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1290,7 +1290,7 @@
     "events": [
     ],
     "id": "1600106561741",
-    "lastFetched": "2021-02-16T13:00:45.094Z",
+    "lastFetched": "2021-02-16T13:05:34.068Z",
     "lat": 39.9455604,
     "long": -105.8130559,
     "name": "Safeway - 40 County Road 804, Fraser, CO, 80442",
@@ -1385,10 +1385,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"5201d49f-0000-0700-0000-602bc2270000\"",
+    "_etag": "\"5501158e-0000-0700-0000-602bc3000000\"",
     "_rid": "X+p8ANrtre-TAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-TAQAAAAAAAA==/",
-    "_ts": 1613480487,
+    "_ts": 1613480704,
     "clientName": "Safeway 1614",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1402,7 +1402,7 @@
     "events": [
     ],
     "id": "1600106623151",
-    "lastFetched": "2021-02-16T13:01:25.050Z",
+    "lastFetched": "2021-02-16T13:05:01.955Z",
     "lat": 39.7249623,
     "long": -104.975483,
     "name": "Safeway - 560 Corona Street, Denver, CO, 80218",
@@ -1497,10 +1497,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"5201aa2d-0000-0700-0000-602bc2070000\"",
+    "_etag": "\"5501b1f2-0000-0700-0000-602bc31d0000\"",
     "_rid": "X+p8ANrtre-YAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-YAQAAAAAAAA==/",
-    "_ts": 1613480455,
+    "_ts": 1613480733,
     "clientName": "Safeway 1656",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1514,7 +1514,7 @@
     "events": [
     ],
     "id": "1600106684444",
-    "lastFetched": "2021-02-16T13:00:52.351Z",
+    "lastFetched": "2021-02-16T13:05:31.269Z",
     "lat": 39.9298738,
     "long": -105.1514501,
     "name": "Safeway - 1601 Coalton Road, Superior, CO, 80027",
@@ -1581,10 +1581,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"50014a8c-0000-0700-0000-602bc18d0000\"",
+    "_etag": "\"550167cc-0000-0700-0000-602bc3120000\"",
     "_rid": "X+p8ANrtre-bAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-bAQAAAAAAAA==/",
-    "_ts": 1613480333,
+    "_ts": 1613480722,
     "clientName": "Safeway 1721",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1598,7 +1598,7 @@
     "events": [
     ],
     "id": "1600106722337",
-    "lastFetched": "2021-02-16T12:58:51.314Z",
+    "lastFetched": "2021-02-16T13:05:04.705Z",
     "lat": 38.0874402,
     "long": -102.6103553,
     "name": "Safeway - 906 E. Olive, Lamar, CO, 81052",
@@ -1609,10 +1609,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"510197c7-0000-0700-0000-602bc1e90000\"",
+    "_etag": "\"5601bf11-0000-0700-0000-602bc3270000\"",
     "_rid": "X+p8ANrtre-cAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-cAQAAAAAAAA==/",
-    "_ts": 1613480425,
+    "_ts": 1613480743,
     "clientName": "Safeway 1760",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -1626,7 +1626,7 @@
     "events": [
     ],
     "id": "1600106734522",
-    "lastFetched": "2021-02-16T13:00:19.712Z",
+    "lastFetched": "2021-02-16T13:05:40.507Z",
     "lat": 38.3257018,
     "long": -104.7048928,
     "name": "Safeway - 1017 North Market Plaza, Pueblo, CO, 81007",
@@ -2057,10 +2057,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"5201d56e-0000-0700-0000-602bc2190000\"",
+    "_etag": "\"550141df-0000-0700-0000-602bc3180000\"",
     "_rid": "X+p8ANrtre-xAQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-xAQAAAAAAAA==/",
-    "_ts": 1613480473,
+    "_ts": 1613480728,
     "clientName": "Safeway 2625",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -2074,7 +2074,7 @@
     "events": [
     ],
     "id": "1600106998016",
-    "lastFetched": "2021-02-16T13:01:07.636Z",
+    "lastFetched": "2021-02-16T13:05:25.784Z",
     "lat": 39.1039886,
     "long": -108.5535142,
     "name": "Safeway - 681 Horizon Drive, Grand Junction, CO, 81506",
@@ -2225,10 +2225,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"50014183-0000-0700-0000-602bc18b0000\"",
+    "_etag": "\"56013422-0000-0700-0000-602bc32b0000\"",
     "_rid": "X+p8ANrtre-5AQAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre-5AQAAAAAAAA==/",
-    "_ts": 1613480331,
+    "_ts": 1613480747,
     "clientName": "Safeway 2812",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -2242,7 +2242,7 @@
     "events": [
     ],
     "id": "1600107098651",
-    "lastFetched": "2021-02-16T12:58:48.690Z",
+    "lastFetched": "2021-02-16T13:05:43.183Z",
     "lat": 39.9637924,
     "long": -105.1622587,
     "name": "Safeway - 910 West Cherry Ave, Louisville, CO, 80027",
@@ -2774,10 +2774,10 @@
   },
   {
     "_attachments": "attachments/",
-    "_etag": "\"50017ac0-0000-0700-0000-602bc19c0000\"",
+    "_etag": "\"56016708-0000-0700-0000-602bc3240000\"",
     "_rid": "X+p8ANrtre8JAgAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8ANrtre8=/docs/X+p8ANrtre8JAgAAAAAAAA==/",
-    "_ts": 1613480348,
+    "_ts": 1613480740,
     "clientName": "Safeway 3729",
     "coach_url": "https://kordinator.mhealthcoach.net/vcl/1610133367915",
     "dateList": [
@@ -2791,7 +2791,7 @@
     "events": [
     ],
     "id": "1600107298392",
-    "lastFetched": "2021-02-16T12:59:06.028Z",
+    "lastFetched": "2021-02-16T13:05:36.846Z",
     "lat": 38.2449402,
     "long": -104.6464871,
     "name": "Safeway - 1231 South Prairie, Pueblo, CO, 81005",
