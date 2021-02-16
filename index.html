@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Colorado COVID-19 Vaccine Finder" />
+    <meta property="og:description" content="A tool to help you track down COVID-19 vaccine appointment openings at Colorado pharmacies. Updated every minute." />
 
     <title>Colorado COVID-19 Vaccine Finder</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -17,3809 +19,514 @@
 
       gtag('config', 'UA-49484378-1');
     </script>
+    <style>
+    .resp-sharing-button__link,
+    .resp-sharing-button__icon {
+      display: inline-block
+    }
+
+    .resp-sharing-button__link,
+    .resp-sharing-button__link:hover {
+      text-decoration: none;
+      color: #fff;
+      margin: 0.5em
+    }
+
+    .resp-sharing-button {
+      border-radius: 5px;
+      transition: 25ms ease-out;
+      padding: 0.5em 0.75em;
+      font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+    }
+
+    .resp-sharing-button__icon svg {
+      width: 1em;
+      height: 1em;
+      margin-right: 0.4em;
+      vertical-align: top
+    }
+
+    .resp-sharing-button--small svg {
+      margin: 0;
+      vertical-align: middle
+    }
+
+    /* Non solid icons get a stroke */
+    .resp-sharing-button__icon {
+      stroke: #fff;
+      fill: none
+    }
+
+    /* Solid icons get a fill */
+    .resp-sharing-button__icon--solid,
+    .resp-sharing-button__icon--solidcircle {
+      fill: #fff;
+      stroke: none
+    }
+
+    .resp-sharing-button--twitter {
+      background-color: #55acee
+    }
+
+    .resp-sharing-button--twitter:hover {
+      background-color: #2795e9
+    }
+
+    .resp-sharing-button--pinterest {
+      background-color: #bd081c
+    }
+
+    .resp-sharing-button--pinterest:hover {
+      background-color: #8c0615
+    }
+
+    .resp-sharing-button--facebook {
+      background-color: #3b5998
+    }
+
+    .resp-sharing-button--facebook:hover {
+      background-color: #2d4373
+    }
+
+    .resp-sharing-button--tumblr {
+      background-color: #35465C
+    }
+
+    .resp-sharing-button--tumblr:hover {
+      background-color: #222d3c
+    }
+
+    .resp-sharing-button--reddit {
+      background-color: #5f99cf
+    }
+
+    .resp-sharing-button--reddit:hover {
+      background-color: #3a80c1
+    }
+
+    .resp-sharing-button--google {
+      background-color: #dd4b39
+    }
+
+    .resp-sharing-button--google:hover {
+      background-color: #c23321
+    }
+
+    .resp-sharing-button--linkedin {
+      background-color: #0077b5
+    }
+
+    .resp-sharing-button--linkedin:hover {
+      background-color: #046293
+    }
+
+    .resp-sharing-button--email {
+      background-color: #777
+    }
+
+    .resp-sharing-button--email:hover {
+      background-color: #5e5e5e
+    }
+
+    .resp-sharing-button--xing {
+      background-color: #1a7576
+    }
+
+    .resp-sharing-button--xing:hover {
+      background-color: #114c4c
+    }
+
+    .resp-sharing-button--whatsapp {
+      background-color: #25D366
+    }
+
+    .resp-sharing-button--whatsapp:hover {
+      background-color: #1da851
+    }
+
+    .resp-sharing-button--hackernews {
+    background-color: #FF6600
+    }
+    .resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+
+    .resp-sharing-button--vk {
+      background-color: #507299
+    }
+
+    .resp-sharing-button--vk:hover {
+      background-color: #43648c
+    }
+
+    .resp-sharing-button--facebook {
+      background-color: #3b5998;
+      border-color: #3b5998;
+    }
+
+    .resp-sharing-button--facebook:hover,
+    .resp-sharing-button--facebook:active {
+      background-color: #2d4373;
+      border-color: #2d4373;
+    }
+
+    .resp-sharing-button--twitter {
+      background-color: #55acee;
+      border-color: #55acee;
+    }
+
+    .resp-sharing-button--twitter:hover,
+    .resp-sharing-button--twitter:active {
+      background-color: #2795e9;
+      border-color: #2795e9;
+    }
+
+    .resp-sharing-button--tumblr {
+      background-color: #35465C;
+      border-color: #35465C;
+    }
+
+    .resp-sharing-button--tumblr:hover,
+    .resp-sharing-button--tumblr:active {
+      background-color: #222d3c;
+      border-color: #222d3c;
+    }
+
+    .resp-sharing-button--email {
+      background-color: #777777;
+      border-color: #777777;
+    }
+
+    .resp-sharing-button--email:hover,
+    .resp-sharing-button--email:active {
+      background-color: #5e5e5e;
+      border-color: #5e5e5e;
+    }
+
+    .resp-sharing-button--pinterest {
+      background-color: #bd081c;
+      border-color: #bd081c;
+    }
+
+    .resp-sharing-button--pinterest:hover,
+    .resp-sharing-button--pinterest:active {
+      background-color: #8c0615;
+      border-color: #8c0615;
+    }
+
+    .resp-sharing-button--linkedin {
+      background-color: #0077b5;
+      border-color: #0077b5;
+    }
+
+    .resp-sharing-button--linkedin:hover,
+    .resp-sharing-button--linkedin:active {
+      background-color: #046293;
+      border-color: #046293;
+    }
+
+    .resp-sharing-button--reddit {
+      background-color: #5f99cf;
+      border-color: #5f99cf;
+    }
+
+    .resp-sharing-button--reddit:hover,
+    .resp-sharing-button--reddit:active {
+      background-color: #3a80c1;
+      border-color: #3a80c1;
+    }
+
+    .resp-sharing-button--whatsapp {
+      background-color: #25D366;
+      border-color: #25D366;
+    }
+
+    .resp-sharing-button--whatsapp:hover,
+    .resp-sharing-button--whatsapp:active {
+      background-color: #1DA851;
+      border-color: #1DA851;
+    }
+
+    .resp-sharing-button--hackernews {
+      background-color: #FF6600;
+      border-color: #FF6600;
+    }
+
+    .resp-sharing-button--hackernews:hover
+    .resp-sharing-button--hackernews:active {
+      background-color: #FB6200;
+      border-color: #FB6200;
+    }
+    </style>
   </head>
   <body>
     <header>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="navbar navbar-dark bg-primary shadow-sm">
         <div class="container">
-          <h1 class="navbar-brand mb-0 fw-bold">Colorado COVID-19 Vaccine Finder</h1>
+          <h1 class="navbar-brand mb-0 fw-bold"><a href="/" class="text-white" style="text-decoration: none;">Colorado COVID-19 Vaccine Finder</a></h1>
         </div>
       </div>
     </header>
     <main>
       <div class="container">
-        <p class="lead text-center text-muted py-lg-4">A tool to help you track down COVID-19 vaccine appointment openings at Colorado pharmacies.</p>
-        <h2>Visit Colorado.gov</h2>
-        <p class="fs-4">Be sure to visit Colorado's official <a href="https://covid19.colorado.gov/for-coloradans/vaccine/where-can-i-get-vaccinated"><strong>find out where you can get vaccinated</strong></a> page for detailed and up to date information.</p>
+        <p class="lead text-center text-muted py-lg-4">A tool to help you track down COVID-19 vaccine appointment openings at Colorado pharmacies. Updated every minute.</p>
 
-        <h2>Tool Status</h2>
+        <div class="row mb-2">
+          <div class="col-md-6 pb-3">
+            <div class="card card-body h-100 bg-primary text-white shadow-sm">
+              <h2 class="display-6 text-center mb-4">Step 1: Review your county's availability and CO's eligibility</h2>
+              <p class="lead">Visit <a href="https://covid19.colorado.gov/for-coloradans/vaccine/where-can-i-get-vaccinated" class="text-white"><strong class="fw-bold">Colorado.gov</strong></a> for detailed information about your county's vaccine options and review whether or not you are eligible yet.</p>
+              <p class="lead">You may be able to signup for vaccines with a health provider in your area (Kaiser, SCL Health, your county, etc.), in which case you will be contacted when it's your turn and you may not need this tool.</p>
+              <a href="https://covid19.colorado.gov/for-coloradans/vaccine/where-can-i-get-vaccinated" class="btn btn-light fw-bold fs-5 text-primary">Visit Colorado.gov <i class="fas fa-arrow-alt-circle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 pb-3">
+            <div class="card card-body h-100 bg-primary text-white shadow-sm">
+              <h2 class="display-6 text-center mb-4">Step 2: Use this tool to try and find a pharmacy appointment</h2>
+              <p class="lead">If you decide you want to find an appointment at a local pharmacy (and are currently eligible for the vaccine), this tool might be able to help.</p>
+              <p class="lead">Rather than searching around on each pharmacy's website, we'll automatically scan the pharmacy websites and show you any available appointments we can find on one page.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>CVS Appointments</h2>
+        
+        
+        
+          <p class="mb-0">No appointments available at any locations as of last check.</p>
+          
+            
+            <p class="card-text text-secondary"><small>Last checked February 16, 2021 at 9:51:40 AM MST</small></p>
+          
+        
+
+        <h2>Safeway, Albertsons Appointments</h2>
+        
+        
+        
+          
+            
+<div class="card mb-4">
+  <h5 class="card-header">Safeway - 315 West 2nd St, Lajunta, CO, 81050</h5>
+  <div class="card-body">
+    
+      <div class="text-success fs-2">
+        <i class="fas fa-check-circle"></i>
+        <span class="fs-5">Appointments available as of February 16, 2021 at 9:51:39 AM MST</span>
+      </div>
+      <ul>
+        
+          <li>02/16/2021 10:00 AM</li>
+        
+          <li>02/16/2021 10:30 AM</li>
+        
+          <li>02/16/2021 11:00 AM</li>
+        
+          <li>02/16/2021 12:00 PM</li>
+        
+          <li>02/16/2021 12:15 PM</li>
+        
+          <li>02/17/2021 11:45 AM</li>
+        
+          <li>02/17/2021 12:15 PM</li>
+        
+          <li>02/18/2021 10:45 AM</li>
+        
+          <li>02/18/2021 11:15 AM</li>
+        
+          <li>02/18/2021 11:30 AM</li>
+        
+          <li>02/18/2021 12:15 PM</li>
+        
+      </ul>
+      <a href="https://www.safeway.com/pharmacy/covid-19.html" class="btn btn-primary">Visit Safeway Website</a>
+    
+    <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:51:39 AM MST</small></p>
+  </div>
+</div>
+
+          
+            
+<div class="card mb-4">
+  <h5 class="card-header">Safeway - 6925 Mesa Ridge Parkway, Fountain, CO, 80817</h5>
+  <div class="card-body">
+    
+      <div class="text-success fs-2">
+        <i class="fas fa-check-circle"></i>
+        <span class="fs-5">Appointments available as of February 16, 2021 at 9:50:52 AM MST</span>
+      </div>
+      <ul>
+        
+          <li>02/19/2021 01:00 PM</li>
+        
+      </ul>
+      <a href="https://www.safeway.com/pharmacy/covid-19.html" class="btn btn-primary">Visit Safeway Website</a>
+    
+    <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:50:52 AM MST</small></p>
+  </div>
+</div>
+
+          
+            
+<div class="card mb-4">
+  <h5 class="card-header">Safeway - 1121 North Circle, Colorado Springs, CO, 80909</h5>
+  <div class="card-body">
+    
+      <div class="text-success fs-2">
+        <i class="fas fa-check-circle"></i>
+        <span class="fs-5">Appointments available as of February 16, 2021 at 9:46:34 AM MST</span>
+      </div>
+      <ul>
+        
+          <li>02/19/2021 02:00 PM</li>
+        
+      </ul>
+      <a href="https://www.safeway.com/pharmacy/covid-19.html" class="btn btn-primary">Visit Safeway Website</a>
+    
+    <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:46:34 AM MST</small></p>
+  </div>
+</div>
+
+          
+        
+
+        <h2>Walgreens Appointments</h2>
+        
+        
+        
+          
+            
+<div class="card mb-4">
+  <h5 class="card-header">101 W MAIN ST, STERLING, CO 80751</h5>
+  <div class="card-body">
+    
+      <div class="text-success fs-2">
+        <i class="fas fa-check-circle"></i>
+        <span class="fs-5">Appointments available as of February 16, 2021 at 9:51:11 AM MST</span>
+      </div>
+      <a href="https://www.walgreens.com/findcare/vaccination/covid-19/location-screening" class="btn btn-primary">Visit Walgreens Website</a>
+    
+    <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:51:11 AM MST</small></p>
+  </div>
+</div>
+
+          
+            
+<div class="card mb-4">
+  <h5 class="card-header">1203 MAIN ST, ALAMOSA, CO 81101</h5>
+  <div class="card-body">
+    
+      <div class="text-success fs-2">
+        <i class="fas fa-check-circle"></i>
+        <span class="fs-5">Appointments available as of February 16, 2021 at 9:48:13 AM MST</span>
+      </div>
+      <a href="https://www.walgreens.com/findcare/vaccination/covid-19/location-screening" class="btn btn-primary">Visit Walgreens Website</a>
+    
+    <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:48:13 AM MST</small></p>
+  </div>
+</div>
+
+          
+            
+<div class="card mb-4">
+  <h5 class="card-header">111 E PLATTE AVE, FORT MORGAN, CO 80701</h5>
+  <div class="card-body">
+    
+      <div class="text-success fs-2">
+        <i class="fas fa-check-circle"></i>
+        <span class="fs-5">Appointments available as of February 16, 2021 at 9:47:29 AM MST</span>
+      </div>
+      <a href="https://www.walgreens.com/findcare/vaccination/covid-19/location-screening" class="btn btn-primary">Visit Walgreens Website</a>
+    
+    <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:47:29 AM MST</small></p>
+  </div>
+</div>
+
+          
+        
+      </div>
+    </main>
+    <footer class="mt-3">
+      <div class="container">
+        <h3>Tool Status</h3>
         <ul>
-          <li><strong>CVS:</strong> Last checked February 16, 2021 at 9:29:36 AM MST. Checking 1 city (new cities will be added as CVS adds them).</li>
-          <li><strong>Safeway, Albertsons:</strong> Last checked February 16, 2021 at 9:30:43 AM MST. Checking all 97 stores in CO.</li>
-          <li><strong>Walgreens:</strong> Last checked February 16, 2021 at 9:30:48 AM MST. Checking all 169 stores in CO.</li>
+          <li><strong>CVS:</strong> Last checked February 16, 2021 at 9:51:40 AM MST. Checking 1 city (new cities will be added as CVS adds them).</li>
+          <li><strong>Safeway, Albertsons:</strong> Last checked February 16, 2021 at 9:51:39 AM MST. Checking all 97 stores in CO.</li>
+          <li><strong>Walgreens:</strong> Last checked February 16, 2021 at 9:51:50 AM MST. Checking all 169 stores in CO.</li>
           <li><strong>King Soopers, City Market, Dillons, Smith's:</strong> Broken (tool was checking, but is now being blocked from accessing Kroger's website).</li>
           <li><strong>Walmart, Sam's Club:</strong> Not yet checking.</li>
         </ul>
 
-        <h2>CVS Appointment Status</h2>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">GREELEY</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:36 AM MST</small></p>
-            </div>
-          </div>
-        
+        <p>View the status of <a href="/all/">all locations being scanned</a> (including those locations without open appointments).</p>
 
-        <h2>Walgreens Appointment Status</h2>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1203 MAIN ST, ALAMOSA, CO 81101</h5>
-            <div class="card-body">
-              
-                <div class="text-success fs-2">
-                  <i class="fas fa-check-circle"></i>
-                  <span class="fs-5">Appointments available as of February 16, 2021 at 9:30:02 AM MST</span>
-                </div>
-                <a href="https://www.walgreens.com/findcare/vaccination/covid-19/location-screening" class="btn btn-primary">Visit Walgreens Website</a>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:02 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">111 E PLATTE AVE, FORT MORGAN, CO 80701</h5>
-            <div class="card-body">
-              
-                <div class="text-success fs-2">
-                  <i class="fas fa-check-circle"></i>
-                  <span class="fs-5">Appointments available as of February 16, 2021 at 9:25:30 AM MST</span>
-                </div>
-                <a href="https://www.walgreens.com/findcare/vaccination/covid-19/location-screening" class="btn btn-primary">Visit Walgreens Website</a>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:30 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">101 W MAIN ST, STERLING, CO 80751</h5>
-            <div class="card-body">
-              
-                <div class="text-success fs-2">
-                  <i class="fas fa-check-circle"></i>
-                  <span class="fs-5">Appointments available as of February 16, 2021 at 9:29:26 AM MST</span>
-                </div>
-                <a href="https://www.walgreens.com/findcare/vaccination/covid-19/location-screening" class="btn btn-primary">Visit Walgreens Website</a>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:26 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7930 WADSWORTH BLVD, ARVADA, CO 80003</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6395 SHERIDAN BLVD, ARVADA, CO 80003</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:15 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">11602 W 64TH AVE, ARVADA, CO 80004</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:47 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6390 MCINTYRE PKWY, ARVADA, CO 80403</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:13 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6603 WADSWORTH BLVD, ARVADA, CO 80003</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:25 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">12011 E ILIFF AVE, AURORA, CO 80014</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:17 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15310 E COLFAX AVE, AURORA, CO 80011</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:49 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">13123 E 16TH AVE, AURORA, CO 80045</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:06 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">24250 E SMOKY HILL RD, AURORA, CO 80016</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:24 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15320 E HAMPDEN AVE, AURORA, CO 80013</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:50 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">10501 E COLFAX AVE, AURORA, CO 80010</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:27 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">12051 E MISSISSIPPI AVE, AURORA, CO 80012</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:10 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15301 E MISSISSIPPI AVE, AURORA, CO 80017</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">18461 E HAMPDEN AVE, AURORA, CO 80013</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:14 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15301 E ILIFF AVE, AURORA, CO 80013</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:17 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">10601 E ALAMEDA AVE, AURORA, CO 80012</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:53 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">18620 E ILIFF AVE, AURORA, CO 80013</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:48 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15 SUN ROAD X8438, AVON, CO 81620</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:42 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2870 28TH ST, BOULDER, CO 80301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4745 ARAPAHOE AVE, BOULDER, CO 80303</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:20 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1111 BROADWAY, BOULDER, CO 80302</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:13 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4800 BASELINE RD, BOULDER, CO 80303</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:20 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3348 28TH STREET, BOULDER, CO 80301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:27 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1830 30TH ST, BOULDER, CO 80301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:31 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1821 E BRIDGE ST, BRIGHTON, CO 80601</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">570 US HIGHWAY 287, BROOMFIELD, CO 80020</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:14 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1609 FREMONT DR, CANON CITY, CO 81212</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:16 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">14 E ALLEN ST, CASTLE ROCK, CO 80108</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:50 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">355 S WILCOX ST, CASTLE ROCK, CO 80104</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:06 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7370 LAGAE RD, CASTLE ROCK, CO 80108</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:51 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2281 E ARAPAHOE RD, CENTENNIAL, CO 80122</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:14 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">8959 E DRY CREEK RD, CENTENNIAL, CO 80112</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:52 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">16950 E SMOKY HILL RD, CENTENNIAL, CO 80015</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:56 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">8151 S QUEBEC ST, CENTENNIAL, CO 80112</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">20051 E SMOKY HILL RD, CENTENNIAL, CO 80015</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:02 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">572 32 RD, CLIFTON, CO 81520</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:33 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4713 FLINTRIDGE DR, COLORADO SPRINGS, CO 80918</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:48 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">725 W BAPTIST RD, COLORADO SPRINGS, CO 80921</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:06 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4470 ROYAL PINE DR, COLORADO SPRINGS, CO 80920</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:19 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3143 W COLORADO AVE, COLORADO SPRINGS, CO 80904</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4315 CENTENNIAL BLVD, COLORADO SPRINGS, CO 80907</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15 N UNION BLVD, COLORADO SPRINGS, CO 80909</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:46 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2785 DUBLIN BLVD, COLORADO SPRINGS, CO 80918</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2921 N NEVADA AVE, COLORADO SPRINGS, CO 80907</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:37 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6820 CENTENNIAL BLVD, COLORADO SPRINGS, CO 80919</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:26 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3480 N ACADEMY BLVD, COLORADO SPRINGS, CO 80917</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:43 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">5755 CONSTITUTION AVE, COLORADO SPRINGS, CO 80915</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:30 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">920 N CIRCLE DR, COLORADO SPRINGS, CO 80909</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:47 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1920 S CHELTON RD, COLORADO SPRINGS, CO 80916</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:33 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">280 MAIN ST, COLORADO SPRINGS, CO 80911</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:14 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">8705 LEXINGTON DR, COLORADO SPRINGS, CO 80920</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:02 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">350 N UNION BLVD, COLORADO SPRINGS, CO 80909</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:54 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6011 RANGEWOOD DR, COLORADO SPRINGS, CO 80918</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:07 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">303 S CIRCLE DR, COLORADO SPRINGS, CO 80910</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:57 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4305 E PLATTE AVE, COLORADO SPRINGS, CO 80915</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:01 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6075 BARNES RD, COLORADO SPRINGS, CO 80922</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:03 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">625 N 19TH ST, COLORADO SPRINGS, CO 80904</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1855 SOUTHGATE RD, COLORADO SPRINGS, CO 80906</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:43 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7390 RANGEWOOD DR, COLORADO SPRINGS, CO 80918</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:08 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">15310 E 104TH AVE, COMMERCE CITY, CO 80022</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:39 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1671 E MAIN ST, CORTEZ, CO 81321</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:36 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">750 W VICTORY WAY, CRAIG, CO 81625</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:53 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6360 E EVANS AVE, DENVER, CO 80222</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:24 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3067 S SHERIDAN BLVD, DENVER, CO 80227</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:39 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">300 S FEDERAL BLVD, DENVER, CO 80219</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:55 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7190 E HAMPDEN AVE, DENVER, CO 80224</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:30 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4545 E 9TH AVE, DENVER, CO 80220</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:59 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1601 E 19TH AVE, DENVER, CO 80218</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:25 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3555 N COLORADO BLVD, DENVER, CO 80205</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:56 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2608 E COLFAX AVE, DENVER, CO 80206</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:46 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2000 E COLFAX AVE, DENVER, CO 80206</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:53 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2870 S COLORADO BLVD, DENVER, CO 80222</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:37 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">120 BROADWAY, DENVER, CO 80203</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:07 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1111 S COLORADO BLVD, DENVER, CO 80246</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:41 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">950 S QUEBEC ST, DENVER, CO 80247</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">801 16TH ST, DENVER, CO 80202</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:19 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6200 E COLFAX AVE, DENVER, CO 80220</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:47 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2975 FEDERAL BLVD, DENVER, CO 80211</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2400 E MIDWAY BLVD, DENVER, CO 80234</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:39 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1505 S FEDERAL BLVD, DENVER, CO 80219</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:42 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">18550 GREEN VALLEY RANCH BLVD, DENVER, CO 80249</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:28 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7311 E 29TH DR, DENVER, CO 80238</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:20 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1235 E EVANS AVE, DENVER, CO 80210</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">5151 W COLFAX AVE, DENVER, CO 80204</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">269 DILLON RIDGE RD, DILLON, CO 80435</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2701 MAIN AVE, DURANGO, CO 81301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:51 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">28 TOWN PLAZA, DURANGO, CO 81301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:36 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">123 E BELLEVIEW AVE, ENGLEWOOD, CO 80113</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:09 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">499 E HAMPDEN AVE, ENGLEWOOD, CO 80113</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:59 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3080 S BROADWAY, ENGLEWOOD, CO 80113</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:46 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">490 ERIE PKWY, ERIE, CO 80516</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:11 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3700 35TH AVE, EVANS, CO 80620</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:25 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3510 EVERGREEN PKWY, EVERGREEN, CO 80439</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:30 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7392 MCLAUGHLIN RD, FALCON, CO 80831</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:45 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1601 W 84TH AVE, FEDERAL HEIGHTS, CO 80260</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:00 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">10390 FEDERAL BLVD, FEDERAL HEIGHTS, CO 80260</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:47 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">5962 FIRESTONE BLVD, FIRESTONE, CO 80504</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:30 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2268 E HARMONY RD, FORT COLLINS, CO 80528</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:22 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">743 S LEMAY AVE, FORT COLLINS, CO 80524</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:17 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1103 WEST PROSPECT STREET, FORT COLLINS, CO 80526</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:12 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4502 S COLLEGE AVE, FORT COLLINS, CO 80525</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:45 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2190 W DRAKE RD, FORT COLLINS, CO 80526</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:09 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2614 S COLLEGE AVE, FORT COLLINS, CO 80525</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:55 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7910 FOUNTAIN MESA RD, FOUNTAIN, CO 80817</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">16440 E ARAPAHOE RD, FOXFIELD, CO 80016</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:58 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">316 W ASPEN AVE, FRUITA, CO 81521</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:08 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">360 S COLORADO BLVD, GLENDALE, CO 80246</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:36 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1412 GRAND AVENUE, GLENWOOD SPRINGS, CO 81601</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:42 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">17222 S GOLDEN RD, GOLDEN, CO 80401</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:48 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">240 W PARK DR, GRAND JUNCTION, CO 81505</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2900 NORTH AVE, GRAND JUNCTION, CO 81504</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:11 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2600 11TH AVE, GREELEY, CO 80631</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:03 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1013 11TH STREET, GREELEY, CO 80631</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:25 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3700 W 10TH ST, GREELEY, CO 80634</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:55 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1641 23RD AVE, GREELEY, CO 80634</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:05 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4175 E WILDCAT RESERVE PKWY, HIGHLANDS RANCH, CO 80126</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:56 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">9390 S UNIVERSITY BLVD, HIGHLANDS RANCH, CO 80126</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:50 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">9141 S BROADWAY, HIGHLANDS RANCH, CO 80129</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:23 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6650 TIMBERLINE RD, HIGHLANDS RANCH, CO 80130</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">309 N US HIGHWAY 287, LAFAYETTE, CO 80026</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:03 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7551 W ALAMEDA AVE, LAKEWOOD, CO 80226</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7665 WEST JEWELL AVENUE, LAKEWOOD, CO 80232</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:19 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">10808 W JEWELL AVE, LAKEWOOD, CO 80232</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:19 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">12880 W ALAMEDA PKWY, LAKEWOOD, CO 80228</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:50 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">10140 W COLFAX AVE, LAKEWOOD, CO 80215</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:34 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">11605 W BELLEVIEW AVE, LITTLETON, CO 80127</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:10 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">100 E MINERAL AVE, LITTLETON, CO 80122</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7496 S SIMMS ST, LITTLETON, CO 80127</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:28 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">5870 S KIPLING PKWY, LITTLETON, CO 80127</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:51 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">6789 W COAL MINE AVE, LITTLETON, CO 80123</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:18 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2697 W BELLEVIEW AVE, LITTLETON, CO 80123</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:05 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7443 W CHATFIELD AVE, LITTLETON, CO 80128</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:15 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">10103 RIDGEGATE PKWY STE 117, LONE TREE, CO 80124</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:26 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">450 KEN PRATT BLVD, LONGMONT, CO 80501</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:22 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">835 E 17TH AVE, LONGMONT, CO 80504</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:40 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1770 HOVER ST, LONGMONT, CO 80501</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:56 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1041 MAIN ST, LONGMONT, CO 80501</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">655 E SOUTH BOULDER RD, LOUISVILLE, CO 80027</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:00 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1300 14TH ST SW, LOVELAND, CO 80537</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:12 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">205 E EISENHOWER BLVD, LOVELAND, CO 80537</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:20 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">3690 N GARFIELD AVE, LOVELAND, CO 80538</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2370 W EISENHOWER BLVD, LOVELAND, CO 80537</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:02 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2351 S TOWNSEND AVE, MONTROSE, CO 81401</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:58 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">265 W HIGHWAY 105, MONUMENT, CO 80132</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:17 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">750 E 120TH AVE, NORTHGLENN, CO 80233</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:40 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">19028 LINCOLN AVE, PARKER, CO 80134</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:22 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">13143 S PARKER RD, PARKER, CO 80134</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:59 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">2900 W NORTHERN AVE, PUEBLO, CO 81005</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:05 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1811 W US HIGHWAY 50, PUEBLO, CO 81008</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:15 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1013 BONFORTE BLVD, PUEBLO, CO 81001</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1520 W 4TH ST, PUEBLO, CO 81004</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:11 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">958 HAILEY LN, PUEBLO WEST, CO 81007</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1440 PINE GROVE RD, STEAMBOAT SPRINGS, CO 80487</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:10 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1600 COALTON RD, SUPERIOR, CO 80027</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:16 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">191 S MCCASLIN BLVD, SUPERIOR, CO 80027</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:57 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4001 E 120TH AVE, THORNTON, CO 80233</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:06 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">8799 WASHINGTON ST, THORNTON, CO 80229</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:54 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4351 E 104TH AVE, THORNTON, CO 80233</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:34 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">13611 COLORADO BLVD, THORNTON, CO 80602</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:49 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">5190 W 120TH AVE, WESTMINSTER, CO 80020</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">9970 WADSWORTH PKWY, WESTMINSTER, CO 80021</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:59 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">7211 FEDERAL BLVD, WESTMINSTER, CO 80030</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:23 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">4401 WADSWORTH BLVD, WHEAT RIDGE, CO 80033</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">12700 W 32ND AVE, WHEAT RIDGE, CO 80033</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:24 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">1480 MAIN ST, WINDSOR, CO 80550</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:53 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">140 PARADISE CIR, WOODLAND PARK, CO 80863</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:27 AM MST</small></p>
-            </div>
-          </div>
-        
+        <h3>About</h3>
+        <p>Finding vaccines seems tough! Hopefully things will become easier soon, but in the meantime, maybe this can help. If you find this useful, feel free to share it around. <a href="https://twitter.com/nickblah">Get in touch</a> with any questions.</p>
+        <p>I'd like to add additional functionality (scanning additional pharmacies and sending e-mail or text notifications when appointments open up) if this proves useful and as time permits. If you're a computer programmer and would like to contribute (or try to set something similar up for your own state), the project is <a href="https://github.com/GUI/covid-vaccine-finder">open source on GitHub</a> (it's currently very messy and undocumented, though).</p>
 
-        <h2>Safeway, Albertsons Appointment Status</h2>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 315 West 2nd St, Lajunta, CO, 81050</h5>
-            <div class="card-body">
-              
-                <div class="text-success fs-2">
-                  <i class="fas fa-check-circle"></i>
-                  <span class="fs-5">Appointments available as of February 16, 2021 at 9:29:52 AM MST</span>
-                </div>
-                <ul>
-                  
-                    <li>02/16/2021 10:00 AM</li>
-                  
-                    <li>02/16/2021 10:30 AM</li>
-                  
-                    <li>02/16/2021 11:00 AM</li>
-                  
-                    <li>02/16/2021 12:00 PM</li>
-                  
-                    <li>02/16/2021 12:15 PM</li>
-                  
-                    <li>02/17/2021 11:45 AM</li>
-                  
-                    <li>02/17/2021 12:15 PM</li>
-                  
-                    <li>02/18/2021 10:45 AM</li>
-                  
-                    <li>02/18/2021 11:15 AM</li>
-                  
-                    <li>02/18/2021 11:30 AM</li>
-                  
-                    <li>02/18/2021 12:15 PM</li>
-                  
-                </ul>
-                <a href="https://www.safeway.com/pharmacy/covid-19.html" class="btn btn-primary">Visit Safeway Website</a>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:52 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Albertsons - 1601 Highway 50 West, Pueblo, CO, 81008</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:36 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Albertsons - 311 W. College Dr., Durango, CO, 81301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:41 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Albertsons - 323 S. Broadway, Denver, CO, 80209</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:55 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1017 North Market Plaza, Pueblo, CO, 81007</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:20 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 10300 Federal Boulevard, Federal Heights, CO, 80260</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:01 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1050 Ken Pratt Boulevard, Longmont, CO, 80501</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1101 E. U.s. Highway 24, Woodland Park, CO, 80863</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:23:54 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 11051 South Parker Road, Parker, CO, 80134</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:39 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 11088 West Jewell, Lakewood, CO, 80232</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:23:24 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1121 North Circle, Colorado Springs, CO, 80909</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:49 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1200 S. Buckley Road, Aurora, CO, 80017</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:57 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 12200 East Mississippi, Aurora, CO, 80012</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:41 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1231 South Prairie, Pueblo, CO, 81005</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:07 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 12442 W. Ken Caryl Ave., Littleton, CO, 80127</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:28 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1300 Dexter Street, Fort Lupton, CO, 80621</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:01 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1301 Main Street, Alamosa, CO, 81101</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:43 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 13111 West Alameda Parkway, Lakewood, CO, 80228</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:52 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1329 South Townsend Avenue, Montrose, CO, 81401</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1414 Main Street, Canon City, CO, 81212</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1425 S. Murray Blvd, Colorado Springs, CO, 80916</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1426 E. Harmony Road, Fort Collins, CO, 80525</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:57 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1451 Eisenhower Blvd., Loveland, CO, 80538</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1535 Main Street, Windsor, CO, 80550</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1550 Highway 92, Delta, CO, 81416</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:04 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1580 E. Main Street, Cortez, CO, 81321</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:32 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1601 Coalton Road, Superior, CO, 80027</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:04 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1605 Bridge Street, Brighton, CO, 80601</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:31 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1632 Hover Road, Longmont, CO, 80501</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1653 S. Colorado Boulevard, Denver, CO, 80222</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:18 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1677 S. Havana, Aurora, CO, 80012</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:41 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1701 Jackson Street, Golden, CO, 80401</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:17 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 181 W. Mineral Ave, Littleton, CO, 80120</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:49 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 18748 E HAMPDEN AVE., AURORA, CO, 80013</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:33 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1900 Highway 24, Leadville, CO, 80461</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:23:57 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 1920 South Nevada Avenue, Colorado Springs, CO, 80905</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:46 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 200 Quebec St #400, Denver, CO, 80230</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:52 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 201 East Jefferson, Englewood, CO, 80113</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:20 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2150 South Downing, Denver, CO, 80210</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:01 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2160 West Drake Road Unit 6, Fort Collins, CO, 80526</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:25 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 220 S. Elizabeth Street, Elizabeth, CO, 80107</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:27 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 232 G Street, Salida, CO, 81201</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:51 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2321 West Eisenhower, Loveland, CO, 80537</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:41 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2425 Miner Street, Idaho Springs, CO, 80452</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:07 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2512 Broadway, Grand Junction, CO, 81503</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:22 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2660 North Federal Boulevard, Denver, CO, 80211</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:12 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 27152 Main St, Conifer, CO, 80433</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2798 Arapahoe, Boulder, CO, 80302</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:30 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2890 No Powers, Colorado Springs, CO, 80922</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:58 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 2901 F. Road, Grand Junction, CO, 81504</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:46 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3275 West Colorado Avenue, Colorado Springs, CO, 80904</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:05 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3325 28th Street, Boulder, CO, 80301</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3333 Arapahoe Road #b, Erie, CO, 80516</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:25 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3526 West Tenth Street, Greeley, CO, 80634</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:10 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3602 W. 144th Ave., Broomfield, CO, 80023</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:11 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3657 South College Ave, Fort Collins, CO, 80525</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:57 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 37500 E US HIGHWAY 40 #881030, STEAMBOAT SPRINGS, CO, 80487</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:35 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3800 West 44th Ave, Denver, CO, 80211</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:41 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3840 East 104th Avenue, Thornton, CO, 80233</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:16 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3851 S. Highway 74, Evergreen, CO, 80439</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:13 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 3900 Wadsworth Blvd, Wheat Ridge, CO, 80033</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:24 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 40 County Road 804, Fraser, CO, 80442</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:33 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 451 East Wonderview Avenue, Estes Park, CO, 80517</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:24 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 4548 Centerplace Drive, Greeley, CO, 80634</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 457 West Main Street, Trinidad, CO, 81082</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:00 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 4800 East Baseline Road, Boulder, CO, 80303</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:14 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 500 E. 120Th Ave., Northglenn, CO, 80233</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 5025 S. Kipling St., Littleton, CO, 80127</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:18 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 5060 North Academy Boulevard, Colorado Springs, CO, 80918</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:16 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 560 Corona Street, Denver, CO, 80218</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:09 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 6100 S. Gun Club Road, Aurora, CO, 80016</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:38 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 620 West Platte Avenue, Fort Morgan, CO, 80701</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:39 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 6220 East 14th Avenue, Denver, CO, 80220</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:07 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 624 Highway 105, Monument, CO, 80132</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:23:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 6460 East Yale Ave., Denver, CO, 80222</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:13 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 6520 S. Academy Blvd., Colorado Springs, CO, 80906</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:31 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 681 Horizon Drive, Grand Junction, CO, 81506</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:03 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 6925 Mesa Ridge Parkway, Fountain, CO, 80817</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:07 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 7055 Austin Bluffs Parkway, Colorado Springs, CO, 80918</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 731 S Lemay, Fort Collins, CO, 80524</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:09 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 7375 Arapahoe Road, Centennial, CO, 80112</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:21 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 7561 West 80th Avenue, Arvada, CO, 80003</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:44 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 757 East 20th Avenue, Denver, CO, 80205</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:26:28 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 7655 Mclaughlin Rd., Falcon, CO, 80831</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:00 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 771 Thornton Parkway, Thornton, CO, 80229</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:27 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 8134 COUNTY ROAD 13, FIRESTONE, CO, 80504</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:14 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 8355 N Rampart Range Road, Littleton, CO, 80125</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:24:54 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 840 Village Center Drive, Colorado Springs, CO, 80919</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:47 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 8434 South Kipling Parkway, Littleton, CO, 80127</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:55 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 860 Cleveland_avenue, Loveland, CO, 80537</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:23:29 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 8750 N Union Blvd, Colorado Springs, CO, 80920</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:43 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 880 South Perry Street, Castle Rock, CO, 80104</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:29:19 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 906 E. Olive, Lamar, CO, 81052</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:06 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 910 West Cherry Ave, Louisville, CO, 80027</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:28:13 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 9160 West Colfax, Lakewood, CO, 80215</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:30:01 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 9229 East Lincoln Ave., Lonetree, CO, 80124</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:27:36 AM MST</small></p>
-            </div>
-          </div>
-        
-          
-          <div class="card mb-4">
-            <h5 class="card-header">Safeway - 9255 S. Broadway, Highlands Ranch, CO, 80129</h5>
-            <div class="card-body">
-              
-                <div>
-                  <i class="fas fa-times-circle"></i>
-                  No appointments available as of last check
-                </div>
-              
-              <p class="card-text text-secondary mt-2"><small>Last checked February 16, 2021 at 9:25:33 AM MST</small></p>
-            </div>
-          </div>
-        
+        <div class="text-center mb-3">
+          <span style="display: inline-block; max-width: 620px;">
+            <!-- Sharingbutton Facebook -->
+            <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvaccine-finder.nickm.org" target="_blank" rel="noopener" aria-label="Share on Facebook">
+              <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+                </div>Share on Facebook</div>
+            </a>
+
+            <!-- Sharingbutton Twitter -->
+            <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.&amp;url=https%3A%2F%2Fvaccine-finder.nickm.org" target="_blank" rel="noopener" aria-label="Share on Twitter">
+              <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+                </div>Share on Twitter</div>
+            </a>
+
+            <!-- Sharingbutton Tumblr -->
+            <a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.&amp;caption=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.&amp;content=https%3A%2F%2Fvaccine-finder.nickm.org&amp;canonicalUrl=https%3A%2F%2Fvaccine-finder.nickm.org&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+              <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5.5v5h5v4h-5V15c0 5 3.5 4.4 6 2.8v4.4c-6.7 3.2-12 0-12-4.2V9.5h-3V6.7c1-.3 2.2-.7 3-1.3.5-.5 1-1.2 1.4-2 .3-.7.6-1.7.7-3h3.8z"/></svg>
+                </div>Share on Tumblr</div>
+            </a>
+
+            <!-- Sharingbutton E-Mail -->
+            <a class="resp-sharing-button__link" href="mailto:?subject=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.&amp;body=https%3A%2F%2Fvaccine-finder.nickm.org" target="_self" rel="noopener" aria-label="Share by E-Mail">
+              <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg></div>Share by E-Mail</div>
+            </a>
+
+            <!-- Sharingbutton Pinterest -->
+            <a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fvaccine-finder.nickm.org&amp;media=https%3A%2F%2Fvaccine-finder.nickm.org&amp;description=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute." target="_blank" rel="noopener" aria-label="Share on Pinterest">
+              <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.14.5C5.86.5 2.7 5 2.7 8.75c0 2.27.86 4.3 2.7 5.05.3.12.57 0 .66-.33l.27-1.06c.1-.32.06-.44-.2-.73-.52-.62-.86-1.44-.86-2.6 0-3.33 2.5-6.32 6.5-6.32 3.55 0 5.5 2.17 5.5 5.07 0 3.8-1.7 7.02-4.2 7.02-1.37 0-2.4-1.14-2.07-2.54.4-1.68 1.16-3.48 1.16-4.7 0-1.07-.58-1.98-1.78-1.98-1.4 0-2.55 1.47-2.55 3.42 0 1.25.43 2.1.43 2.1l-1.7 7.2c-.5 2.13-.08 4.75-.04 5 .02.17.22.2.3.1.14-.18 1.82-2.26 2.4-4.33.16-.58.93-3.63.93-3.63.45.88 1.8 1.65 3.22 1.65 4.25 0 7.13-3.87 7.13-9.05C20.5 4.15 17.18.5 12.14.5z"/></svg>
+                </div>Share on Pinterest</div>
+            </a>
+
+            <!-- Sharingbutton LinkedIn -->
+            <a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fvaccine-finder.nickm.org&amp;title=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.&amp;summary=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.&amp;source=https%3A%2F%2Fvaccine-finder.nickm.org" target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+              <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"/></svg>
+                </div>Share on LinkedIn</div>
+            </a>
+
+            <!-- Sharingbutton Reddit -->
+            <a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3A%2F%2Fvaccine-finder.nickm.org&amp;resubmit=true&amp;title=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute." target="_blank" rel="noopener" aria-label="Share on Reddit">
+              <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/></svg>
+                </div>Share on Reddit</div>
+            </a>
+
+            <!-- Sharingbutton WhatsApp -->
+            <a class="resp-sharing-button__link" href="whatsapp://send?text=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute.%20https%3A%2F%2Fvaccine-finder.nickm.org" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+              <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z"/></svg>
+                </div>Share on WhatsApp</div>
+            </a>
+
+            <!-- Sharingbutton Hacker News -->
+            <a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fvaccine-finder.nickm.org&amp;t=Colorado%20COVID-19%20Vaccine%20Finder.%20A%20tool%20to%20help%20you%20track%20down%20COVID-19%20vaccine%20appointment%20openings%20at%20Colorado%20pharmacies.%20Updated%20every%20minute." target="_blank" rel="noopener" aria-label="Share on Hacker News">
+              <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><path fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888 1.39 2.883.53.994.995 2.02 1.393 3.08.265.4.463.764.596 1.095.13.334.262.63.395.898.662 1.325 1.26 2.618 1.79 3.877.53 1.26.993 2.42 1.39 3.48 1.06-2.254 2.22-4.673 3.48-7.258 1.26-2.585 2.552-5.27 3.877-8.052L103.49 0h18.69L77.84 83.308v53.087h-16.9v-54.08z"></path></svg>
+                </div>Share on Hacker News</div>
+            </a>
+          </span>
+        </div>
       </div>
-    </main>
-    <footer>
-      
     </footer>
   </body>
 </html>
