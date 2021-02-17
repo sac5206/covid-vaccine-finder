@@ -1,13 +1,13 @@
 [
   {
     "_attachments": "attachments/",
-    "_etag": "\"0c00a4ab-0000-0700-0000-602c9b380000\"",
+    "_etag": "\"0d000604-0000-0700-0000-602c9bb00000\"",
     "_rid": "X+p8AM8Yl9oBAAAAAAAAAA==",
     "_self": "dbs/X+p8AA==/colls/X+p8AM8Yl9o=/docs/X+p8AM8Yl9oBAAAAAAAAAA==/",
-    "_ts": 1613536056,
+    "_ts": 1613536176,
     "city": "GREELEY",
     "id": "CO-GREELEY",
-    "lastFetched": "2021-02-17T04:27:36.277Z",
+    "lastFetched": "2021-02-17T04:29:36.417Z",
     "pctAvailable": "0.00%",
     "state": "CO",
     "status": "Fully Booked",
